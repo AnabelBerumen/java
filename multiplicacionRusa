@@ -1,0 +1,18 @@
+	//inicio metodo multiplicación rusa
+	public int multiplicacionRusa(int multiplicador , int multiplicando) {
+		
+		int suma = 0;
+		
+		while ( multiplicador != 0 ){//inicio while
+			
+			if ( multiplicador % 2 != 0 ){// inicio if
+				
+				suma = suma + multiplicando;
+			}//fin if
+			
+			multiplicador = multiplicador / 2 ;
+			multiplicando = multiplicando* 2;
+			
+		}
+		return suma;
+	}//fin metodo multiplicacionRusa
