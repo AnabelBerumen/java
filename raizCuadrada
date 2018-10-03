@@ -1,0 +1,16 @@
+	//inicio metodo sqrt
+	public double sqrt(double n) {
+	
+		double Ri1 = 0;
+		double Ri = 1;
+		double E = 1;
+		
+		while ( E > 0.005 ){//inicio while
+			
+          Ri1 = ((Ri1 + n /Ri)/2);
+          E = Math.abs(Ri1-Ri);
+          Ri = Ri1;
+		}//fin while
+		return Ri;
+	
+	}//fin metodo sqrt
