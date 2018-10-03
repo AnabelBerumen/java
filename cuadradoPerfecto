@@ -1,0 +1,37 @@
+	//inicio metodo cuadradoPerfecto
+	public String cuadradoPerfecto() {
+		
+		int  x = 0;
+		int  y = 0;
+		int  z = 0;
+		int  com = 0;
+		int  zcuadrada = z * z;
+		String cuad = "";
+		
+	
+		while ( z <= 50){//inicio while
+		
+			
+				while (x <= 50){//inicio while
+					
+					while ( y <= 50) {//inicio while
+					
+						
+				
+						if ( zcuadrada == ((x*x)+(y*y))){//inicio if
+							
+							cuad = cuad + "\n  z^2 " + zcuadrada + " es igual que la suma de x^2 = " + x + " + y^2 = " +y ; 
+						
+						}//fin if
+					y = y + 1;					
+				
+		
+					}//fin while
+				x = x + 1;	
+		
+			}//fin while
+		z = z + 1;	
+		
+		}
+		return cuad;
+	}//fin metodo cuadradoPerfecto
